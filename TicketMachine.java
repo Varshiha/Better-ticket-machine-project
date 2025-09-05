@@ -92,10 +92,8 @@ public class TicketMachine
      */
     public int refundBalance()
     {
-        int amountToRefund;
-        amountToRefund = balance;
-        balance = 0;
-        return amountToRefund;
+     balance = 0;
+     return balance;
     }
     public void affordable (int budget)
     {
