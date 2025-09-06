@@ -24,15 +24,20 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = cost;
-        balance = 0;
-        total = 0;
-    }
-
+       price = cost;
+       balance = 0;
+       total = 0;
+   }
+   public int emptyMachine()
+   {
+    total = total;
+    total = 0;
+    return total;
+   }
     /**
      * @Return The price of a ticket.
      */
-    public int getPrice()
+   public int getPrice()
     {
         return price;
     }
@@ -92,17 +97,11 @@ public class TicketMachine
      */
     public int refundBalance()
     {
-     balance = 0;
-     return balance;
+        int amountToRefund;
+        amountToRefund = balance;
+        balance = 0;
+        return amountToRefund;
     }
-    public void affordable (int budget)
-    {
-        if(price > budget) {
-            System.out.printf("Too expensive. Your budget is %d%n" , budget);
-        }
-        else {
-            System.out.println("Just right");
-        }
-    }
+    
     
 }
